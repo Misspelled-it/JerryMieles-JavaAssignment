@@ -38,44 +38,44 @@ public class InputCollector {
 				switch (function) {
 					case 1:
 						if(varOption == 2) {
-							Adder add = new Adder(num1, num2);
+							Adder add = new Adder(num1, num2, timeRequested);
 							add.add(num1, num2);
 						}
 						else if(varOption == 1) {
-							Adder add = new Adder(num1, num2, num3);
+							Adder add = new Adder(num1, num2, num3, timeRequested);
 							add.add(num1, num2, num3);
 						}
 						outputStream.write(Calendar.getInstance().getTime().toString());
 						break;
 					case 2:
 						if(varOption == 2) {
-							Subtractor sub = new Subtractor(num1, num2);
+							Subtractor sub = new Subtractor(num1, num2, timeRequested);
 							sub.subtract(num1, num2);
 						}
 						else if(varOption == 1) {
-							Subtractor sub = new Subtractor(num1, num2, num3);
+							Subtractor sub = new Subtractor(num1, num2, num3, timeRequested);
 							sub.subtract(num1, num2, num3);
 						}
 						outputStream.write(Calendar.getInstance().getTime().toString());
 						break;
 					case 3:
 						if(varOption == 2) {
-							Multiplier mul = new Multiplier(num1, num2);
+							Multiplier mul = new Multiplier(num1, num2, timeRequested);
 							mul.multiply(num1, num2);
 						}
 						else if(varOption == 1) {
-							Multiplier mul = new Multiplier(num1, num2, num3);
+							Multiplier mul = new Multiplier(num1, num2, num3, timeRequested);
 							mul.multiply(num1, num2, num3);
 						}
 						outputStream.write(Calendar.getInstance().getTime().toString());
 						break;
 					case 4:
 						if(varOption == 2) {
-							Divider div = new Divider(num1, num2);
+							Divider div = new Divider(num1, num2, timeRequested);
 							div.divide(num1, num2);
 						}
 						else if(varOption == 1) {
-							Divider div = new Divider(num1, num2, num3);
+							Divider div = new Divider(num1, num2, num3, timeRequested);
 							div.divide(num1, num2, num3);
 						}
 						outputStream.write(Calendar.getInstance().getTime().toString());
