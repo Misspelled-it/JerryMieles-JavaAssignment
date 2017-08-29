@@ -1,6 +1,7 @@
 package JavaAssignment_PartD;
 import java.util.*;
 public class Subtractor extends Mathematician{
+	//Constructors for 2 and 3 operands
 	Subtractor(int num1, int num2, long timeRequested){
 		this.num1 = num1;
 		this.num2 = num2;
@@ -17,6 +18,7 @@ public class Subtractor extends Mathematician{
 		this.responseTime = 0;
 		this.timeRequested = new Date(timeRequested);
 	}
+	//primary function for this class in two and 3 operands, calls print to show results
 	public void subtract(int num1, int num2) {
 		this.result = this.num1 - this.num2;
 		Date timeNow = new Date();
