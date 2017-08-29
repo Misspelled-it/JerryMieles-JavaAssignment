@@ -14,6 +14,7 @@ public class Number_Program extends Thread{
 	}
 	public void run() {
 		if(this.numberType == "EVEN") {
+			//routine for adding even numbers
 			this.numberList = new ArrayList<Integer>();
 			for(int i = start; i<= end; i++) {
 				if(i%2 == 0) {
@@ -24,6 +25,7 @@ public class Number_Program extends Thread{
 		else if(this.numberType == "ODD"){
 			this.numberList = new ArrayList<Integer>();
 			for(int i = start; i<= end; i++) {
+				//odd numbers can be negative or positive this way.
 				if(i%2 == 1 || i%2 == -1) {
 					this.numberList.add(i);
 				}
